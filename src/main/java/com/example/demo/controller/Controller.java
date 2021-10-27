@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+
 @RestController
 public class Controller {
 
@@ -17,8 +19,18 @@ public class Controller {
 
     @GetMapping("/")
     public String index(){
-        Cat cat = new Cat("name4", "breed");
-        return  gson.toJson(cat);
+        Cat cat = new Cat("cat1", "breed");
+        Cat cat2 = new Cat("cat2", "breed");
+        Cat cat3 = new Cat("cat3", "breed");
+        Cat cat4 = new Cat("cat4", "breed");
+
+        ArrayList<Cat> cats = new ArrayList<>();
+        cats.add(cat);
+        cats.add(cat2);
+        cats.add(cat3);
+        cats.add(cat4);
+
+        return  gson.toJson(cats);
     }
 
     @GetMapping("/setname")
