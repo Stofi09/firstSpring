@@ -12,4 +12,14 @@ public class AddNumTest {
     public void addTwoNumTest(){
         assertEquals(5, AddNum.addTwoNum(2,3));
     }
+
+    @Test
+    public void subTwoNum(){
+        assertEquals(5,AddNum.subTwoNum(10,5));
+    }
+
+    @Test
+    public void addThreeNumTest(){
+        assertEquals(15,AddNum.addThreeNum(5,5,5));
+    }
 }
