@@ -22,4 +22,9 @@ public class AddNumTest {
     public void addThreeNumTest(){
         assertEquals(15,AddNum.addThreeNum(5,5,5));
     }
+
+    @Test
+    public void duplicateTest(){
+        assertEquals(8,AddNum.duplicate(4));
+    }
 }

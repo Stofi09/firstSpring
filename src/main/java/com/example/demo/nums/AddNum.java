@@ -9,4 +9,7 @@ public class AddNum {
     public static int addThreeNum(int a, int b, int c){
         return a+b+c;
     }
+    public static int duplicate(int a){
+        return a*2;
+    }
 }
